@@ -11,7 +11,7 @@ const mongoose=require("mongoose");
 // }).catch((err)=>{
 //     console.log(err);
 // })
-mongoose.connect("mongodb").then(()=>{
+mongoose.connect("mongodb+srv://suneetkatoch:Suneet123@cluster0.cskfz.mongodb.net/myFirstDatabase1?retryWrites=true&w=majority").then(()=>{
     console.log("connected successfully")
 }).catch((err)=>{
     console.log(err);
@@ -27,7 +27,7 @@ const Schema= new mongoose.Schema({
 
 })
 
-const Usermodel = mongoose.model("User",Schema);
+const Usermodel = mongoose.odel("User",Schema);
 
 module.exports =Usermodel;
 
