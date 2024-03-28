@@ -1,10 +1,15 @@
+/**
+ * Insert this Errsole code snippet as the first line of your app's main file
+ */
 const errsole = require('@errsole/node');
 errsole.initialize({
   framework: 'express',
-  token: 'ead09fc4-39c3-44c6-b140-e08f61fd9c55',
+  token: 'd20878e8-8d13-406d-83fb-7707a30a5079',
   exitOnException: true,
   evalExpression: true
 });
+// End of Errsole code snippet
+
 const express =require("express")
 const app =express();
 const User = require("./database");
